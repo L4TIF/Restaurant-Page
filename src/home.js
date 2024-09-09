@@ -2,7 +2,7 @@ import { doc } from "prettier";
 import salad from "./assets/salad.webp"
 import { makeElement } from "./elementMaker";
 const home = () => {
-  
+
     document.getElementById("content").replaceChildren();
 
     // parent main div
@@ -46,7 +46,7 @@ const home = () => {
     // hero desc
     let heroDesc = makeElement("div", "relative animate__animated animate__fadeInUp animate__delay-3s relative md:pr-[36%]", "hero-desc");
     let heroDescText = makeElement("div", "relative h-fit bg-white p-16 text-lg", "hero-desc-text");
-    let recipeBtn = makeElement("div", "absolute  left-0 top-0 flex h-20 w-72 items-center justify-between bg-yellow-500 px-12 shadow-2xl hover:bg-yellow-400 ", "recipe");
+    let recipeBtn = makeElement("div", "absolute -bottom-10 left-16 lg:bottom-10 lg:left-36 flex h-20 w-72 items-center justify-between bg-yellow-500 px-12 shadow-2xl hover:bg-yellow-400", "recipe");
     let recipeBtnText = makeElement("div", "text-lg", "recipe-text");
     let recipeBtnArrow = makeElement("div", "text-4xl", "arrow");
 
