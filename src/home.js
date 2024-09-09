@@ -1,6 +1,6 @@
 import { doc } from "prettier";
 import salad from "./assets/salad.webp"
-// import { makeElement } from "./elementMaker";
+import { makeElement } from "./elementMaker";
 const home = () => {
   
     document.getElementById("content").replaceChildren();
@@ -74,11 +74,6 @@ const home = () => {
     main.appendChild(heroDesc);
 
 }
-const makeElement = (elementType, classesString, id) => {
-    let element = document.createElement(elementType);
-    element.className = classesString;
-    element.id = id;
-    return element;
-}
+
 
 export default home;
