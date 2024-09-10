@@ -1,16 +1,31 @@
 import './style.css';
 import home from "./home.js";
+import recipe from './recipe.js';
 
-// home(); //initializing first time
+home(); //initializing first time
+let icon = document.getElementById("logo");
 let homeBTn = document.getElementById("home");
-let menuBtn =document.querySelectorAll("#recipe");
-let contactBtn =document.getElementById("contact-us");
+let menuBtn = document.querySelectorAll("#recipe");
+let contactBtn = document.getElementById("contact-us");
 
-homeBTn.addEventListener("click",home);
+icon.addEventListener("click",home);
 
-menuBtn.forEach((b)=>{
-    b.addEventListener("click",()=>{
-        
+
+homeBTn.addEventListener("click", () => {
+    home();
+    menuBtn = document.querySelectorAll("#recipe")
+    menuBtn.forEach((b) => {
+        b.addEventListener("click", () => {
+            recipe();
+            console.log("clicked")
+        })
+    })
+
+});
+menuBtn.forEach((b) => {
+    b.addEventListener("click", () => {
+        recipe();
+        console.log("clicked")
     })
 })
 

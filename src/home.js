@@ -2,7 +2,6 @@ import { doc } from "prettier";
 import salad from "./assets/salad.webp"
 import { makeElement } from "./elementMaker";
 const home = () => {
-
     document.getElementById("content").replaceChildren();
 
     // parent main div
