@@ -1,6 +1,7 @@
 import './style.css';
 import home from "./home.js";
 import recipe from './recipe.js';
+import contact from './contact.js';
 
 home(); //initializing first time
 let icon = document.getElementById("logo");
@@ -11,5 +12,5 @@ let contactBtn = document.getElementById("contact-us");
 icon.addEventListener("click",home);
 homeBTn.addEventListener("click",home);
 menuBtn.addEventListener("click",recipe);
-
+contactBtn.addEventListener("click",contact);
 
