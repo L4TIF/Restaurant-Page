@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <title>Restaurant Page</title>
   <script defer src="main.js"></script></head>
@@ -50,7 +54,7 @@
         <div id="top-right-menu" class="flex gap-12 text-2xl">
           <div id="search">
             <i
-              class="fa fa-search cursor-pointer text-white hover:text-gray-600 lg:text-gray-800"
+              class="fa fa-search cursor-pointer text-white hover:text-yellow-400"
             ></i>
           </div>
           <div id="menu" class="lg:hidden">
@@ -63,165 +67,98 @@
       </nav>
     </header>
     <div id="content">
-      <!-- <div
-        id="main"
-        class="mx-auto grid max-w-2xl grid-rows-4 gap-x-16 gap-y-10 lg:max-w-6xl lg:grid-cols-2 lg:grid-rows-2"
+      <!-- about us section -->
+      <!-- <div id="about-us" class="mx-auto text-center text-white lg:w-3/6">
+        <h1 class="my-6 text-3xl font-bold text-yellow-400">About us</h1>
+        <p class="md:text-xl">
+          <span class="text-2xl">Fresh, Flavorful, and Fast.</span> <br />
+
+          At <span class="text-yellow-400">healthyfy</span>, we believe that
+          healthy eating doesn’t have to sacrifice taste. Our salads are crafted
+          with the freshest ingredients, vibrant flavors, and a commitment to
+          quality. Whether you're looking for a quick lunch or a satisfying
+          dinner, we offer a variety of customizable salads to suit your
+          preferences. Our mission is to provide delicious, nutritious meals
+          that nourish your body and your soul. Come experience the difference
+          today!
+        </p>
+      </div> 
+      <div
+        class="mx-auto h-full items-center justify-center gap-16 md:flex lg:w-3/5"
+        id="contact"
       >
-      
         <div
-          class="card grid-column-start 1 grid-column-end 3 grid-row-start 1 grid-row-end 2 h-[500px] md:h-[650px]"
+          class="w-full text-center text-3xl font-light text-white"
+          id="address"
         >
-          <div
-            class="card__content relative transition-transform duration-1000"
-          >
-            <div
-              id="recipes"
-              class="card__front absolute w-full drop-shadow-9xl"
-            >
-              <img
-                class="block h-full w-full object-cover"
-                src="assets/1.webp"
-                alt="salad"
-              />
-            </div>
-            <div
-              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
-            >
-              <h2 class="text-2xl">Panzanella Bread Salad</h2>
-              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
-              <ul class="list-disc">
-                <li>4 cups tomatoes, cut into large chunks</li>
-                <li>
-                  4 cups day old (somewhat dry and hard) crusty bread (Italian
-                  or French loaf), cut into chunks the same size as the tomatoes
-                  
-                </li>
-                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
-                <li>1/2 red onion, chopped</li>
-                <li>1 bunch fresh basil, torn into little pieces</li>
-                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
-                <li>Salt and pepper to taste</li>
-              </ul>
-            </div>
+          <h2 class="text-yellow-4096 my-6">Address</h2>
+          <p>
+            12345 Oak Street Apartment 4B <br />
+            Springfield, IL 62702
+          </p>
+          <div id="icons" class="flex justify-evenly text-4xl mt-10">
+            <i class="ri-facebook-box-line cursor-pointer"></i>
+            <i class="ri-instagram-line cursor-pointer"></i>
+            <i class="ri-youtube-line cursor-pointer"></i>
+            <i class="ri-twitter-x-line cursor-pointer"></i>
           </div>
         </div>
-
-        <div
-          class="card grid-column-start 3 grid-column-end 4 grid-row-start 1 grid-row-end 2 h-[500px] md:h-[650px]"
-        >
-          <div
-            class="card__content relative transition-transform duration-1000"
+        <div id="get-in-touch-wrapper" class="w-full text-center text-white">
+          <h2
+            id="get-in-touch"
+            class="my-14 text-3xl font-bold text-yellow-400"
           >
-            <div
-              id="recipes"
-              class="card__front absolute w-full drop-shadow-9xl"
-            >
-              <img
-                class="block h-full w-full object-cover"
-                src="assets/2.webp"
-                alt="salad"
-              />
-            </div>
-            <div
-              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
-            >
-              <h2 class="text-2xl">Panzanella Bread Salad</h2>
-              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
-              <ul class="list-disc">
-                <li>4 cups tomatoes, cut into large chunks</li>
-                <li>
-                  4 cups day old (somewhat dry and hard) crusty bread (Italian
-                  or French loaf), cut into chunks the same size as the tomatoes
-                  
-                </li>
-                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
-                <li>1/2 red onion, chopped</li>
-                <li>1 bunch fresh basil, torn into little pieces</li>
-                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
-                <li>Salt and pepper to taste</li>
-              </ul>
-            </div>
-          </div>
+            Get In Touch
+          </h2>
+          <form
+            id="contact-form"
+            class="text-xl"
+            action="mailto:mrlatif598+RestaurantPage@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name" class="block">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="my-4 w-96 bg-transparent outline focus:outline-yellow-400"
+            />
+            <label for="email" class="block">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="my-4 w-96 bg-transparent outline focus:outline-yellow-400"
+            />
+            <label for="message" class="block">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              cols="40"
+              class="my-4 w-96 bg-transparent outline focus:outline-yellow-400"
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              value="Submit"
+              class="border-2 border-white p-2 px-4 lg:hover:bg-yellow-500 lg:hover:text-white cursor-pointer"
+            />
+          </form>
         </div>
+      </div> -->
 
-        <div
-          class="card grid-column-start 1 grid-column-end 3 grid-row-start 2 grid-row-end 3 h-[500px] md:h-[650px]"
-        >
-          <div
-            class="card__content relative transition-transform duration-1000"
-          >
-            <div
-              id="recipes"
-              class="card__front absolute w-full drop-shadow-9xl"
-            >
-              <img
-                class="block h-full w-full object-cover"
-                src="assets/3.webp"
-                alt="salad"
-              />
-            </div>
-            <div
-              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
-            >
-              <h2 class="text-2xl">Panzanella Bread Salad</h2>
-              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
-              <ul class="list-disc">
-                <li>4 cups tomatoes, cut into large chunks</li>
-                <li>
-                  4 cups day old (somewhat dry and hard) crusty bread (Italian
-                  or French loaf), cut into chunks the same size as the tomatoes
-                  
-                </li>
-                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
-                <li>1/2 red onion, chopped</li>
-                <li>1 bunch fresh basil, torn into little pieces</li>
-                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
-                <li>Salt and pepper to taste</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="card grid-column-start 3 grid-column-end 4 grid-row-start 2 grid-row-end 3 h-[500px] md:h-[650px]"
-        >
-          <div
-            class="card__content relative transition-transform duration-1000"
-          >
-            <div
-              id="recipes"
-              class="card__front absolute w-full drop-shadow-9xl"
-            >
-              <img
-                class="block h-full w-full object-cover"
-                src="assets/4.webp"
-                alt="salad"
-              />
-            </div>
-            <div
-              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
-            >
-              <h2 class="text-2xl">Panzanella Bread Salad</h2>
-              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
-              <ul class="list-disc">
-                <li>4 cups tomatoes, cut into large chunks</li>
-                <li>
-                  4 cups day old (somewhat dry and hard) crusty bread (Italian
-                  or French loaf), cut into chunks the same size as the tomatoes
-            
-                </li>
-                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
-                <li>1/2 red onion, chopped</li>
-                <li>1 bunch fresh basil, torn into little pieces</li>
-                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
-                <li>Salt and pepper to taste</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-
-   
-      </div>
     </div>
+    <footer
+      class="my-16 w-full justify-center gap-16 text-center text-2xl text-white lg:flex"
+    >
+      <p class="font-bold text-yellow-400">
+        healthy<span class="text-white">fy.</span>
+      </p>
+      <a href="https://github.com/L4TIF" class="footer-right" target="_blank"
+        >Created by Latif <i class="ri-github-fill text-3xl text-yellow-400"></i
+      ></a>
+    </footer>
   </body>
 </html>
