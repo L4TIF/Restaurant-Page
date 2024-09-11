@@ -1,6 +1,6 @@
 import { makeElement } from "./elementMaker";
 import image1 from "./assets/1.webp"
-import image2 from "./assets/2.webp"
+import image2 from "./assets/salad.webp"
 import image3 from "./assets/3.webp"
 import image4 from "./assets/4.webp"
 
@@ -23,14 +23,14 @@ const recipe = () => {
 
 const createCard = (imageSrc) => {
     // card parent
-    const card = makeElement("div", "card grid-column-start 1 grid-column-end 3 grid-row-start 1 grid-row-end 2 h-[500px] md:h-[650px]", "card");
+    const card = makeElement("div", "card h-[500px] md:h-[650px]", "card");
     const card_content = makeElement("div", "card__content relative transition-transform duration-1000", "card_content");
-    const card_front = makeElement("div", "card__front absolute w-full drop-shadow-9xl", "card_front");
+    const card_front = makeElement("div", "card__front absolute w-full drop-shadow-9xl left-0 right-0 top-0", "card_front");
     const img = makeElement("img", "block h-full w-full object-cover", "saladImg");
     img.src = imageSrc;
     img.alt = "salad";
 
-    const card_back = makeElement("div", "card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white", "card_back");
+    const card_back = makeElement("div", "card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-10 lg:p-20 text-white", "card_back");
     // inside card back
     const heading = makeElement("h2", "text-2xl", "heading");
     heading.innerText = "Panzanella Bread Salad";

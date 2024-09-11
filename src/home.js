@@ -1,6 +1,7 @@
 import { doc } from "prettier";
 import salad from "./assets/salad.webp"
 import { makeElement } from "./elementMaker";
+import recipe from "./recipe";
 const home = () => {
     document.getElementById("content").replaceChildren();
 
@@ -11,7 +12,7 @@ const home = () => {
 
 
     // hero text element creation
-    let heroText = makeElement("div", "text-wrap px-6 py-16 text-7xl text-white lg:px-16 lg:text-8xl", "hero-text");
+    let heroText = makeElement("div", "text-wrap py-16 text-7xl text-white lg:px-16 lg:text-8xl", "hero-text");
     let heroTextTop = makeElement("div", "animate__animated animate__fadeInUp animate__delay-1s font-thin", "hero-text-top");
     let heroTextBottom = makeElement("div", "animate__animated animate__fadeInUp animate__delay-2s font-thin sm:ml-16 md:my-10 lg:ml-44", "hero-text-bottom")
     let spanTop = makeElement("span", "font-bold", "spanTop");
@@ -36,8 +37,8 @@ const home = () => {
     heroText.appendChild(heroTextBottom);
 
     // hero pic
-    let heroPic = makeElement("div", "animate__animated animate__fadeIn animate__delay-1s row-span-2 flex max-w-full items-center object-cover align-top", "hero-pic");
-    let heroImg = makeElement("img", "block drop-shadow-9xl sm:max-w-lg xl:max-w-3xl");
+    let heroPic = makeElement("div", "animate__animated animate__fadeIn animate__delay-1s row-span-2 flex max-w-full items-center align-top", "hero-pic");
+    let heroImg = makeElement("img", "block drop-shadow-9xl sm:max-w-lg xl:max-w-3xl object-cover pl-8 lg:pl-0");
     heroImg.src = salad;
     heroImg.alt = "salad";
     heroPic.appendChild(heroImg);     // append
@@ -56,7 +57,7 @@ const home = () => {
             repudiandae quae magnam necessitatibus sint voluptate modi eum
             dignissimos vel animi soluta tempore.`;
 
-    recipeBtnText.innerText = "Recipe";
+    recipeBtnText.innerText = "Menu";
     recipeBtnArrow.innerText = "\u2192";
 
 
@@ -72,6 +73,7 @@ const home = () => {
     main.appendChild(heroPic);
     main.appendChild(heroDesc);
 
+    recipeBtn.addEventListener("click",recipe);
 }
 
 
