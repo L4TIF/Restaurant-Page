@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="96821e92e3c43182493f.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Restaurant Page</title>
+  <script defer src="main.js"></script></head>
+  <body class="h-full">
+    <header>
+      <nav
+        class="animate__animated animate__fadeInDown mx-6 flex h-20 items-center justify-between lg:mx-16 lg:h-24"
+      >
+        <div id="logo" class="text-xl font-semibold text-white">
+          <a href="#"
+            ><span class="cursor-pointer text-yellow-400">healthy</span>fy.</a
+          >
+        </div>
+        <div id="middle-menu" class="text-lg font-medium text-white">
+          <button
+            id="home"
+            class="hidden cursor-pointer hover:text-yellow-400 md:mx-14 lg:inline"
+          >
+            Home
+          </button>
+          <button
+            id="recipe"
+            class="hidden cursor-pointer hover:text-yellow-400 md:mx-14 lg:inline"
+          >
+            Recipes
+          </button>
+          <button
+            id="contact-us"
+            class="hidden cursor-pointer hover:text-yellow-400 md:mx-14 lg:inline"
+          >
+            Contact us
+          </button>
+        </div>
+        <div id="top-right-menu" class="flex gap-12 text-2xl">
+          <div id="search">
+            <i
+              class="fa fa-search cursor-pointer text-white hover:text-gray-600 lg:text-gray-800"
+            ></i>
+          </div>
+          <div id="menu" class="lg:hidden">
+            <i
+              class="fa fa-bars text-white hover:text-gray-600 lg:text-gray-800"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="content">
+      <!-- <div
+        id="main"
+        class="mx-auto grid max-w-2xl grid-rows-4 gap-x-16 gap-y-10 lg:max-w-6xl lg:grid-cols-2 lg:grid-rows-2"
+      >
+      
+        <div
+          class="card grid-column-start 1 grid-column-end 3 grid-row-start 1 grid-row-end 2 h-[500px] md:h-[650px]"
+        >
+          <div
+            class="card__content relative transition-transform duration-1000"
+          >
+            <div
+              id="recipes"
+              class="card__front absolute w-full drop-shadow-9xl"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="assets/1.webp"
+                alt="salad"
+              />
+            </div>
+            <div
+              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
+            >
+              <h2 class="text-2xl">Panzanella Bread Salad</h2>
+              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
+              <ul class="list-disc">
+                <li>4 cups tomatoes, cut into large chunks</li>
+                <li>
+                  4 cups day old (somewhat dry and hard) crusty bread (Italian
+                  or French loaf), cut into chunks the same size as the tomatoes
+                  
+                </li>
+                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
+                <li>1/2 red onion, chopped</li>
+                <li>1 bunch fresh basil, torn into little pieces</li>
+                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card grid-column-start 3 grid-column-end 4 grid-row-start 1 grid-row-end 2 h-[500px] md:h-[650px]"
+        >
+          <div
+            class="card__content relative transition-transform duration-1000"
+          >
+            <div
+              id="recipes"
+              class="card__front absolute w-full drop-shadow-9xl"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="assets/2.webp"
+                alt="salad"
+              />
+            </div>
+            <div
+              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
+            >
+              <h2 class="text-2xl">Panzanella Bread Salad</h2>
+              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
+              <ul class="list-disc">
+                <li>4 cups tomatoes, cut into large chunks</li>
+                <li>
+                  4 cups day old (somewhat dry and hard) crusty bread (Italian
+                  or French loaf), cut into chunks the same size as the tomatoes
+                  
+                </li>
+                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
+                <li>1/2 red onion, chopped</li>
+                <li>1 bunch fresh basil, torn into little pieces</li>
+                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card grid-column-start 1 grid-column-end 3 grid-row-start 2 grid-row-end 3 h-[500px] md:h-[650px]"
+        >
+          <div
+            class="card__content relative transition-transform duration-1000"
+          >
+            <div
+              id="recipes"
+              class="card__front absolute w-full drop-shadow-9xl"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="assets/3.webp"
+                alt="salad"
+              />
+            </div>
+            <div
+              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
+            >
+              <h2 class="text-2xl">Panzanella Bread Salad</h2>
+              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
+              <ul class="list-disc">
+                <li>4 cups tomatoes, cut into large chunks</li>
+                <li>
+                  4 cups day old (somewhat dry and hard) crusty bread (Italian
+                  or French loaf), cut into chunks the same size as the tomatoes
+                  
+                </li>
+                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
+                <li>1/2 red onion, chopped</li>
+                <li>1 bunch fresh basil, torn into little pieces</li>
+                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card grid-column-start 3 grid-column-end 4 grid-row-start 2 grid-row-end 3 h-[500px] md:h-[650px]"
+        >
+          <div
+            class="card__content relative transition-transform duration-1000"
+          >
+            <div
+              id="recipes"
+              class="card__front absolute w-full drop-shadow-9xl"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="assets/4.webp"
+                alt="salad"
+              />
+            </div>
+            <div
+              class="card__back absolute left-0 right-0 top-0 flex flex-col items-center justify-center p-20 text-white"
+            >
+              <h2 class="text-2xl">Panzanella Bread Salad</h2>
+              <p class="py-6 text-lg text-yellow-400">Ingredients</p>
+              <ul class="list-disc">
+                <li>4 cups tomatoes, cut into large chunks</li>
+                <li>
+                  4 cups day old (somewhat dry and hard) crusty bread (Italian
+                  or French loaf), cut into chunks the same size as the tomatoes
+            
+                </li>
+                <li>1 cucumber, skinned and seeded, cut into large chunks</li>
+                <li>1/2 red onion, chopped</li>
+                <li>1 bunch fresh basil, torn into little pieces</li>
+                <li>1/4 to 1/2 cup high-quality extra virgin olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+   
+      </div>
+    </div>
+  </body>
+</html>
