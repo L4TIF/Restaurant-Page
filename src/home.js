@@ -12,7 +12,7 @@ const home = () => {
 
 
     // hero text element creation
-    let heroText = makeElement("div", "text-wrap pt-12 lg:py-12 text-7xl text-white lg:px-16 lg:text-8xl", "hero-text");
+    let heroText = makeElement("div", "text-wrap pt-12 lg:py-12 text-6xl sm:text-7xl text-white lg:px-16 lg:text-8xl", "hero-text");
     let heroTextTop = makeElement("div", "animate__animated animate__fadeInUp animate__delay-1s font-thin", "hero-text-top");
     let heroTextBottom = makeElement("div", "animate__animated animate__fadeInUp animate__delay-2s font-thin sm:ml-16 md:my-10 lg:ml-44", "hero-text-bottom")
     let spanTop = makeElement("span", "font-bold", "spanTop");

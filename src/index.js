@@ -28,8 +28,18 @@ menubar.addEventListener("click", () => {
         homeBTn = document.getElementById("hamburger-home");
         menuBtn = document.getElementById("hamburger-menu");
         contactBtn = document.getElementById("hamburger-contact-us");
+
+
     }
     homeBTn.addEventListener("click", home);
     menuBtn.addEventListener("click", recipe);
     contactBtn.addEventListener("click", contact);
 })
+
+window.addEventListener('click', (event) => {
+    if ((event.target != hamburgerIcon && event.target.parentNode != hamburgerIcon) && event.target != menubar.children[0]) {
+        if (!hamburgerIcon.classList.contains("hidden")) {
+            hamburgerIcon.classList.toggle("hidden");
+        }
+    }
+});
